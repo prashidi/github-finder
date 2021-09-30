@@ -8,7 +8,7 @@ const Search = ({ searchUsers, showClear, clearUsers, setAlert }) => {
     e.preventDefault();
     if (text === "") {
       //Show Alert
-      this.props.setAlert("Please enter a keword", "light");
+      setAlert("Please enter a keword", "light");
     } else {
       searchUsers(text);
       setText("");
